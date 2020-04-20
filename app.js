@@ -8,8 +8,17 @@ var app = express();
 
 var indexRouter = require("./controller/blog");
 
+const port = process.env.PORT || 3000;
+app.listen(port, (err) => {
+  if (err) {
+    console.log("error" + err);
+  } else {
+    console.log("connected on port", port);
+  }
+});
+
 // view engine setup
-app.engine('pug', require('pug').__express)
+app.engine("pug", require("pug").__express);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
