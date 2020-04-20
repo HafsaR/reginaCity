@@ -1,0 +1,139 @@
+extends layout
+block content
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+    .container
+      a.navbar-brand.js-scroll-trigger(href='#page-top')
+        img(src='images/regina-3.svg')
+      button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+        | Menu
+        i.fas.fa-bars.ml-1
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.text-uppercase.ml-auto
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='#portfolio') Top Sights
+          
+  header.masthead
+    .container
+      .masthead-subheading Welcome !
+      .masthead-heading.text-uppercase It's Nice To Meet You
+      a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#portfolio') Tell Me More
+  section#portfolio.page-section.bg-light
+  .container
+    .text-center
+      h2.section-heading.text-uppercase Top Sights
+      h3.section-subheading.text-muted 
+    .row
+      .col-lg-4.col-sm-6.mb-4
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://www.royalsaskmuseum.ca/rsm',target='_blank')
+              img.img-fluid(src='/images/royal-sk-museum.jpg',alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Royal Saskatchewan Museum
+            .portfolio-caption-subheading.text-muted The Royal Saskatchewan Museum is a natural history museum in Regina, Saskatchewan. 
+      .col-lg-4.col-sm-6.mb-4
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='http://wascana.ca/',target='_blank')
+              img.img-fluid(src='/images/wascana.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Wascana Centre
+            .portfolio-caption-subheading.text-muted Wascana Centre is a 930-hectare urban park built around Wascana Lake in Regina, Saskatchewan, Canada, established in 1912 with a design from renowned architect Thomas Mawson. 
+      .col-lg-4.col-sm-6.mb-4
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://www.legassembly.sk.ca/',target='_blank')
+              img.img-fluid(src='/images/sk-legislative.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Saskatchewan Legislative Building
+            .portfolio-caption-subheading.text-muted The Saskatchewan Legislative Building is located in Regina, Saskatchewan, Canada, and houses the Legislative Assembly of Saskatchewan.
+      .col-lg-4.col-sm-6.mb-4.mb-lg-0
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://www.sasksciencecentre.com/',target='_blank')
+              img.img-fluid(src='/images/SKScienceCtr.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Saskatchewan Science Centre
+            .portfolio-caption-subheading.text-muted The Saskatchewan Science Centre is an interactive science museum located in Regina, Saskatchewan. 
+      .col-lg-4.col-sm-6.mb-4.mb-sm-0
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://rcmphc.com/',target='_blank')
+              img.img-fluid(src='/images/rcmp.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading RCMP Heritage Centre
+            .portfolio-caption-subheading.text-muted The RCMP Heritage Centre is a law enforcement museum located in Regina, Saskatchewan, Canada.
+      .col-lg-4.col-sm-6
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://reginafloralconservatory.ca/',target='_blank')
+              img.img-fluid(src='/images/floral.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Regina Floral Conservatory
+            .portfolio-caption-subheading.text-muted The Regina Floral Conservatory, in Regina, Saskatchewan, Canada, is a conservatory operated by volunteers of the Regina Garden Associates with support from the city of Regina.
+      .col-lg-4.col-sm-6
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://governmenthousesk.ca/',target='_blank')
+              img.img-fluid(src='/images/government-house.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Government House
+            .portfolio-caption-subheading.text-muted Government House, Regina, Saskatchewan, was constructed as a residence for the Lieutenant-Governor of the North-West Territories, whose territorial headquarters were in Regina until the provinces of Saskatchewan and Alberta were created out of the Territories in 1905 and Regina became the capital of Saskatchewan.
+      .col-lg-4.col-sm-6
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://mackenzie.art/',target=_blank)
+              img.img-fluid(src='/images/martgallery.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading MacKenzie Art Gallery
+            .portfolio-caption-subheading.text-muted The MacKenzie Art Gallery is an art museum located in Regina, Saskatchewan, Canada.
+      .col-lg-4.col-sm-6
+        .portfolio-item
+          a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fas.fa-plus.fa-3x
+            a(href='https://casinoregina.com/entertainment/box-office',target='_blank')
+              img.img-fluid(src='/images/casino.jpg', alt='')
+          .portfolio-caption
+            .portfolio-caption-heading Casino Regina
+            .portfolio-caption-subheading.text-muted Casino Regina is a casino located on Saskatchewan Drive — in Regina, Saskatchewan, Canada.
+      
+  footer.footer.py-4
+    .container
+      .row.align-items-center
+        .col-lg-4.text-lg-left Copyright © ReginaCity 2020
+        .col-lg-4.my-3.my-lg-0
+          a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/cityofregina?lang=en')
+            i.fab.fa-twitter
+          a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/CityRegina/?rf=979980922057733')
+            i.fab.fa-facebook-f
+          a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/company/city-of-regina/?originalSubdomain=ca')
+            i.fab.fa-linkedin-in
+        
+
+    
